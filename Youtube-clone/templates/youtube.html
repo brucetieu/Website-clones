@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif/png" href="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png">
+    
+    <title>How Long Does it Take to Become a Web Developer 2018</title>
+
+    <style>
+
+        body {
+            /* position: relative; */
+            margin:0 auto;
+            background-color: whitesmoke;
+        }
+
+        /* Fix nav bar at the top and align the divs  */
+        .nav-bar-top {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            width: 100%;
+            /* max-width: 90%; */
+            height: 60px;
+            background-color: white;
+            /* background-color: whitesmoke; */
+        }
+
+        /* Move nav elements to the right of nav bar */
+        .nav-right-top {
+            margin-left: auto;
+        }
+
+        /* Create search bar in between the left navs elements and right nav elements */
+        .nav-middle-top {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+
+        /* Center and align the left nav elements with flex */
+        .nav-left-top {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left-top div {
+            margin-right: 25px;
+        }
+
+        #left-top {
+            margin-left: 30px;
+        }
+
+ /* Center and align the right nav elements with flex */
+        .nav-right-top {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-top div {
+            margin-left: 25px;
+        }
+        
+        #right-top {
+            margin-right: 30px;
+        }
+
+        /* Sizing and color of the nav elements on left */
+        .nav-left-ele-top {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        /* Sizing and color of the nav elements on right */
+        .nav-right-ele-top {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        /* Grid layout divided in two parts: 1) vid/comment section, 2) Vid suggestions */
+        .grid-layout {
+            margin-top: 75px;
+            display: grid;
+            grid-template-columns: 900px 400px;
+            grid-gap: 68px;
+        }
+
+        /* Put the width of the div which contains vid suggestions to minimize horizontal scroll
+            when resized */
+        .flex-vid-recs {
+            width: 100%;
+        }
+        /* Do the same for the div which contains the video and comments section */
+        .vid-div {
+            max-width: 100%;
+            height: auto;
+            margin-left: 50px;
+        }
+
+        /* Initial width of the video thumbnails */
+        .thumbnail-sty {
+            width: 400px;
+        }
+
+        /* Width of comments is the same as width of the video */
+        .comment-sty {
+            width: 900px;
+        }
+
+        /* styling for the search box itself */
+        input {
+            font-size: 14px;
+            width: 510px;
+            height: 30px;
+            padding-left: 15px;
+            /* max-width: 100%; */
+            border-radius: 20px;
+            border: .1px solid lightgray;
+        }
+
+        /* A lot of media queries to make the page responsive */
+        @media (max-width: 1350px) {
+           iframe { width: 800px; }
+           .flex-vid-recs { margin-left: -100px; width: 100%;} 
+           .thumbnail-sty {width: 100%;}
+           .comment-sty {width: 800px; height: auto;}}
+        @media (max-width: 1250px) {
+        iframe { width: 700px; }
+        .flex-vid-recs { margin-left: -200px;} 
+        .thumbnail-sty {width: 100%;}
+        .comment-sty {width: 700px; height: auto;}}
+        @media (max-width: 1150px) {
+        iframe { width: 600px; }
+        .flex-vid-recs { margin-left: -300px;} 
+        .thumbnail-sty {width: 100%;}
+        .comment-sty {width: 600px; height: auto;}}
+        @media (max-width: 1050px) {
+        iframe { width: 500px; }
+        .flex-vid-recs { margin-left: -400px;} 
+        .thumbnail-sty {width: 100%;}
+        .comment-sty {width: 500px; height: auto;}
+        input {position: relative}}
+        @media (max-width: 950px) {
+        iframe { width: 400px; }
+        .flex-vid-recs { margin-left: -500px;} 
+        .thumbnail-sty {width: 100%;}}
+        @media (max-width: 950px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 400px;}
+        iframe { width: 800px;}
+        .comment-sty {width: 800px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+        @media (max-width: 850px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 400px;}
+        iframe { width: 800px;}
+        .comment-sty {width: 800px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+        @media (max-width: 750px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 300px;}
+        iframe { width: 700px;}
+        .comment-sty {width: 700px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+        @media (max-width: 650px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 250px;}
+        iframe { width: 600px;}
+        .comment-sty {width: 600px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+        @media (max-width: 550px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 200px;}
+        iframe { width: 500px;}
+        .comment-sty {width: 500px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+        @media (max-width: 450px) {
+        .grid-layout {display: flex; flex-wrap: wrap;}
+        .vid-div{margin-left: 5px;}
+        input {width: 100px;}
+        iframe { width: 400px;}
+        .comment-sty {width: 400px; height: auto;}
+        .flex-vid-recs { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: -80px;}
+        .thumbnail-sty {width: auto; height: auto;}}
+    
+    </style>
+</head>
+
+<body>
+    <!-- Main div for navbar -->
+    <div class="nav-bar-top">
+        <!-- Nav left -->
+            <div class="nav-left-top">
+                <div id="left-top"><a href="#"><img class="nav-left-ele-top" src="https://p7.hiclipart.com/preview/257/813/305/hamburger-button-computer-icons-menu-navigation-vector.jpg" alt="hamburger" width="32" height="32"></a></div>
+                <div><a href="#"><img class="nav-left-ele-top" src="https://www.pngitem.com/pimgs/m/50-502903_youtube-symbol-logo-computer-icons-black-youtube-icon.png" alt="hamburger" width="40" height="32"></a></div>
+            </div>
+            <!-- Nav middle -->
+            <div class="nav-middle-top">
+                <div class="search-bar">
+                    <input class="search" type="text" placeholder="&#x1F50D; Search">
+                    <!-- <div class="search-icon"><img id="search" src="https://img.icons8.com/all/500/search--v1.png" alt=search width="24" height="24"></div> -->
+                </div>
+            </div>
+
+            <!-- Nav right -->
+            <div class="nav-right-top">
+                <div><a class="nav-right-ele-top" href="#"><img src="https://static.thenounproject.com/png/1156507-200.png" width="30" height="30" alt="apps"></a></div>
+                <div><a class="nav-right-ele-top" href="#"><img src="https://cdn0.iconfinder.com/data/icons/interaction-7/70/video__filmstrip__edit__create__media-512.png" width="24" height="24" alt="apps"></a></div>
+                <div><a class="nav-right-ele-top" href="#"><img src="https://www.shareicon.net/data/2015/08/19/87490_grid_512x512.png" width="20" height="20" alt="apps"></a></div>
+                <div  id="right-top" ><a class="nav-right-ele-top" href="#"><img src="https://www.freepngimg.com/download/google/66726-customer-account-google-service-button-search-logo.png" alt="avatar" width="32" height="32"></a></div>
+            </div>
+        </div>
+
+        <!-- Grid layout divs which splits page in to parts, a vid/comments section and vid suggestions -->
+        <div class="grid-layout">
+            <!-- Video for div -->
+            <div class="vid-div">
+                <div class="vid-response">
+                    <iframe width="900" height="500" src="https://www.youtube.com/embed/p4l_PT8J53g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <img src="/static/desc.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments1.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments2.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments3.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments4.png" alt=thumbnail class="comment-sty" width="900">
+                <img src="/static/comments5.png" alt=thumbnail class="comment-sty" width="900">
+            </div>
+            <!-- Div for video recs on the right -->
+            <div class="flex-vid-recs">
+                <p>Up next</p>
+                <div class="center"><img src="/static/thumb1.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb2.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb3.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb4.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb5.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb6.png" alt=thumbnail class="thumbnail-sty"></div>
+                <div class="center"><img src="/static/thumb7.png" alt=thumbnail class="thumbnail-sty"></div>
+            </div>
+        </div>
+</body>
+</html>

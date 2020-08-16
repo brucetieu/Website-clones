@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.main-nav {
+    max-width: 100%;
+}
+.main-nav .nav-container {
+    /* background-color: green; */
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    color: white;
+    background: black;
+}
+
+.under-main-nav .covid-info {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: dodgerblue;
+    padding: 12px;
+    top: 43.5px;
+    width: 100%;
+    text-align: center;
+}
+
+.under-main-nav .covid-info p {
+    color: white;
+}
+
+.under-covid-nav .support-info {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: white;
+    padding: 12px;
+    top: 85px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.main-nav .li-block {
+    /* width: 10px; */
+    padding: 12px 25px;
+    list-style: none;
+}
+
+#logo {
+    background-image: url("https://p1.hiclipart.com/preview/694/135/611/black-n-white-apple-logo-png-clipart-thumbnail.jpg");
+    background-size: 16px 44px;
+    background-repeat: no-repeat;
+    width: 16px;
+}
+.fullscreen {
+    /* background-image: url("https://i.pinimg.com/originals/85/38/78/853878b5f79c4c7d09f4a4e67c02ed60.jpg"); */
+    background-image: url("https://i.pinimg.com/originals/12/57/b8/1257b8b7071e086e412fde8a7b7c8f2f.jpg");
+    height: 90vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fullscreen .main-alignment {
+    margin-top: 50px;
+}
+
+.fullscreen h1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6;
+}
+
+.fullscreen p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.fullscreen a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 400;
+}
+
+#se-price {
+    color: gray;
+    font-size: 17px;
+}
+
+.fullscreen-iphone11 {
+    /* background-image: url("https://i.pinimg.com/originals/85/38/78/853878b5f79c4c7d09f4a4e67c02ed60.jpg"); */
+    background-image: url("https://www.cinema5d.com/wp-content/uploads/2019/09/iphone-11-final.jpg");
+    height: 90vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fullscreen-iphone11 h1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6;
+}
+
+.fullscreen-iphone11 p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#learn-more-buy {
+    font-size: 22px;
+    padding-top: 10px;
+}
+.fullscreen-iphone11 a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 400;
+}
+
+#se-price {
+    color: gray;
+    font-size: 17px;
+}
+
+#iphone11-price {
+    color: gray;
+    font-size: 17px;
+}
+
+.fullscreen-ipadpro {
+    background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg");
+    height: 90vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-alignment2 h1{
+    font-size: 55px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight: 600;
+}
+
+.main-alignment2 p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+#learn-more-buy2 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.fullscreen-ipadpro a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.airpods {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F9%2F1%2F4%2F9%2F24849419-2-eng-GB%2FCropped-1581007286kal-visuals-rvBPaAwHMS8-unsplash.jpg?source=nar-cms");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+
+.watch {
+    background-image: url("https://venturebeat.com/wp-content/uploads/2018/09/IMG_0232-e1563799617568.jpeg?fit=2000%2C1125&strip=all");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.tv {
+    background-image: url("https://s.yimg.com/uu/api/res/1.2/FpYUYDmZi4rRzIdC23FQ_w--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-10/3b586b10-f777-11e9-9bd6-cef11e7fc7da");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arcade {
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/ce140bb/2147483647/strip/true/crop/3200x1800+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdf%2F27%2Fbd27df7d4d8490bcc9f229a50f5d%2Fla-et-hc-sayonara-wild-hearts-annapurna.03.jpg");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-image: url("https://roguerocket.com/wp-content/uploads/2019/11/AppleCard.jpg");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apple-logo {
+    background-image: url("https://i.pinimg.com/originals/d8/6a/d1/d86ad103ee6798c025f69424a2a242de.jpg");
+    /* background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/dhe-haivan-cbfeTesD7wo-unsplash_411248.jpg"); */
+    height: 70vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.airpods h1 {
+    padding-top: 55px;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    max-width: 400px;
+}
+
+.airpods a {
+    line-height: 2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+.watch h1 {
+    padding-top: 55px;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    max-width: 400px;
+}
+
+.watch p {
+    max-width: 400px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 350px;
+    color: white;
+}
+
+#series5 {
+    color: red;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+.watch a {
+    line-height: 2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+.arcade h1 {
+    padding-top: 55px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    max-width: 400px;
+}
+.arcade p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+.arcade a {
+    line-height: 2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+.card h1 {
+    /* padding-top: 55px; */
+    color: black;
+    font-size: 40px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    max-width: 400px;
+    font-weight: 500;
+}
+.card p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    max-width: 500px;
+}
+.card a {
+    line-height: 2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+#padding-card {
+    padding-top: 55px;
+    font-weight: 500;
+}
+
+.apple-logo h1 {
+    padding-top: 55px;
+    color: black;
+    font-size: 40px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    max-width: 400px;
+    font-weight: 500;
+}
+
+.apple-logo a {
+    line-height: 2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 17px;
+}
+
+.footer-info {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.footer-info p {
+    font-size: 12px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.outer-flex-wrapper {
+    max-width: 100%;
+    background: #f5f5f7;
+}
+.flex-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;  */
+    /* flex-wrap: wrap; */
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+
+    /* align-items: center; */
+}
+
+.flex-wrapper .flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex-container {
+    padding-top: 16px;
+    /* margin-right: 50px; */
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    line-height: 1.8rem;
+}
+
+.flex-wrapper ul {
+    list-style: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.border {
+    border-top: 1px solid lightgray;
+    max-width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-ways {
+    padding-top: 15px;
+    /* padding-bottom: 1px; */
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-ways p {
+    font-size: 12px;
+}
+
+.flex-bottom {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.inner-flex-bottom {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.inner-flex-bottom p {
+    padding-right: 10px;
+}
+
+#priv-policy {
+    padding-left: 20px;
+}
+.far-right-flex {
+    margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+    #mac {
+        display: none;
+    }
+    #ipad {
+        display: none;
+    }
+    #iphone {
+        display: none;
+    }
+    #watch {
+        display: none;
+    }
+    #tv {
+        display: none;
+    }
+    #music {
+        display: none;
+    }
+    #support {
+        display: none;
+    }
+    #logo2 {
+        display: none;
+    }
+    
+}
+
+/* @media (min-width: 800px) {
+    .support-info {
+        margin-top: 18px;
+    }
+} */
+
+@media (max-width: 500px) {
+    .support-info {
+        margin-top: 20px;
+    }
+}
+
+
+
