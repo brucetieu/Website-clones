@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif/png" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-128.png">
+    <title>Google</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .nav-bar-top {
+            position: fixed;
+            top: 2%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            /* background-color: whitesmoke; */
+        }
+
+        .nav-right-top {
+            margin-left: auto;
+        }
+
+        .nav-left-top {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left-top div {
+        
+            margin-right: 25px;
+        }
+
+        #left-top {
+            margin-left: 30px;
+        }
+
+        .nav-right-top {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-top div {
+            margin-left: 25px;
+        }
+        
+        #right-top {
+            margin-right: 30px;
+        }
+
+        .nav-left-ele-top {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        .nav-right-ele-top {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+/* 
+        li {
+            display: inline-block;
+        }
+
+        .list {
+            display: flex;
+        }
+        .nav-right {
+            margin-left: auto;
+            margin-right: 30px;
+            margin-top: 5px;
+        }
+        .nav-right li {
+            padding-right: 10px;
+        }
+
+        .nav-right-ele {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        .nav-left {
+            margin-left: -25px;
+            margin-top: 5px;
+        }
+
+        .nav-left li {
+            padding-right: 10px;
+        }
+
+        .nav-left-ele {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        } */
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 220px;
+            
+        }
+
+        #google {
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            
+            width: 580px;
+            height: 40px;
+            border-radius: 20px;
+            border: .1px solid lightgray;
+        }
+        
+        .buttons {
+            padding-top: 30px;
+            
+        }
+
+        button {
+            width: auto;
+            padding: 10px;
+            font-size: 14px;
+            background-color: whitesmoke;
+            border: none;
+            padding-right: 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-bar-bottom {
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: whitesmoke;
+        }
+
+        .nav-right-bot {
+            margin-left: auto;
+        }
+
+        .nav-left-bot {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left-bot div {
+        
+            margin-right: 25px;
+        }
+
+        #left {
+            margin-left: 30px;
+        }
+
+        .nav-right-bot {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-bot div {
+            margin-left: 25px;
+        }
+        
+        #right {
+            margin-right: 30px;
+        }
+
+        .nav-left-ele-bot {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-right-ele-bot {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar-top">
+        
+            <div class="nav-left-top">
+                <div id="left-top"><a class="nav-left-ele-top" href="#">About</a></div>
+                <div><a class="nav-left-ele-top" href="#">Store</a></div>
+            </div>
+            <div class="nav-right-top">
+                <div><a class="nav-right-ele-top" href="#">Gmail</a></div>
+                <div><a class="nav-right-ele-top" href="#">Images</a></div>
+                <div><a class="nav-right-ele-top" href="#"><img src="https://www.shareicon.net/data/2015/08/19/87490_grid_512x512.png" width="20" height="20" alt="apps"></a></div>
+                <div  id="right-top" ><a class="nav-right-ele-top" href="#"><img src="https://www.freepngimg.com/download/google/66726-customer-account-google-service-button-search-logo.png" alt="avatar" width="32" height="32"></a></div>
+            </div>
+        
+        </div>
+
+    <div class="flex-container">
+        <div>
+            <img id="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div class="buttons">
+            <button class="button-sty" type="button">Google Search</button>
+            <button class="button-sty" type="button">I'm Feeling Lucky</button>
+        </div>
+    </div>
+
+    <div class="nav-bar-bottom">
+        
+            <div class="nav-left-bot">
+                <div id="left"><a class="nav-left-ele-bot" href="#">Advertising</a></div>
+                <div><a class="nav-left-ele-bot" href="#">Business</a></div>
+                <div><a class="nav-left-ele-bot" href="#">How Search Works</a></div>
+            </div>
+            <div class="nav-right-bot">
+                <div><a class="nav-right-ele-bot" href="#">Privacy</a></div>
+               <div> <a class="nav-right-ele-bot" href="#">Terms</a></div>
+               <div id="right"><a class="nav-right-ele-bot" href="#">Settings</a></div>
+            </div>
+   
+        </div>
+</body>
+</html>
